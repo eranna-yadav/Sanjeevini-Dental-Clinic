@@ -9,15 +9,15 @@ const siteUrl = 'https://sanjeevini-dental-clinic.vercel.app'
 const clinic = {
   name: 'Sanjeevini Dental Clinic',
   shortName: 'Sanjeevini', // used in the chat assistant title
-  doctor: 'Dr. SomShekhar',
+  doctor: 'Dr. Sanjeevani',
   doctorRole: 'Dental Surgeon',
-  phoneDisplay: '094485 80245', // how the number is shown
-  phoneTel: '+919448580245', // for tap-to-call (with country code)
-  whatsapp: '919448580245', // WhatsApp number: country code + number, digits only
+  phoneDisplay: '083100 86991', // how the number is shown
+  phoneTel: '+918310086991', // for tap-to-call (with country code)
+  whatsapp: '918310086991', // WhatsApp number: country code + number, digits only
   city: 'Hassan',
-  shortArea: 'Park Road, Hassan', // shown in the top bar
+  shortArea: 'Hosala Road, Hassan', // shown in the top bar
   address: {
-    street: 'Ground floor, Park Rd, opp. to Sanskrutha Bhavana, Rangoli Halla',
+    street: 'PNM Complex, Hosala Road, Amir Mohalla',
     city: 'Hassan',
     region: 'Karnataka',
     regionCode: 'IN-KA',
@@ -25,16 +25,15 @@ const clinic = {
     country: 'IN',
   },
   addressLines: [
-    'Ground floor, Park Rd, opp. to Sanskrutha Bhavana',
-    'Rangoli Halla, Hassan, Karnataka 573201',
+    'PNM Complex, Hosala Road',
+    'Amir Mohalla, Hassan, Karnataka 573201',
   ],
   // What Google Maps should search for (map embed + "Get directions").
-  mapQuery: 'Srilakshmi Dental Clinic, Park Rd, opp. Sanskrutha Bhavana, Rangoli Halla, Hassan, Karnataka 573201',
-  // TODO: confirm the real clinic timings before going live.
+  mapQuery: 'Sanjeevini Dental Clinic, PNM Complex, Hosala Road, Amir Mohalla, Hassan, Karnataka 573201',
   hours: [
     { day: 'Monday – Saturday', time: '10:00 AM – 1:30 PM' },
     { day: 'Evening', time: '5:00 PM – 8:30 PM' },
-    { day: 'Sunday', time: 'By appointment' },
+    { day: 'Sunday', time: 'Closed' },
   ],
 }
 
@@ -54,10 +53,10 @@ const brand = {
 // Search engine and social-share text.
 const seo = {
   title: `${clinic.name} | Best Dentist in ${clinic.city}, ${clinic.address.region}`,
-  description: `${clinic.name} on Park Road, ${clinic.city} offers root canal treatment, dental implants, braces, teeth whitening, crowns and kids dentistry by ${clinic.doctor}. Call ${clinic.phoneDisplay} to book.`,
+  description: `${clinic.name} on Hosala Road, ${clinic.city} offers root canal treatment, dental implants, braces, teeth whitening, crowns and kids dentistry by ${clinic.doctor}. Call ${clinic.phoneDisplay} to book.`,
   keywords: `dentist in ${clinic.city}, dental clinic ${clinic.city}, ${clinic.name}, ${clinic.doctor}, root canal ${clinic.city}, dental implants ${clinic.city}, braces ${clinic.city}, teeth whitening ${clinic.city}`,
   shareTitle: `${clinic.name} | Dentist in ${clinic.city}`,
-  shareDescription: `Gentle, modern dental care for the whole family on Park Road, ${clinic.city}. Book with ${clinic.doctor}: ${clinic.phoneDisplay}.`,
+  shareDescription: `Gentle, modern dental care for the whole family on Hosala Road, ${clinic.city}. Book with ${clinic.doctor}: ${clinic.phoneDisplay}.`,
   shareTagline: 'Root canal · Implants · Braces · Whitening', // line on the link-preview image
   locale: 'en_IN',
   priceRange: '₹₹',
@@ -81,7 +80,7 @@ const text = {
     eyebrow: 'About Us',
     title: 'Expert, Gentle Care',
     highlight: 'for Every Smile',
-    body: `${clinic.name} is a family dental clinic on Park Road, ${clinic.city}, led by ${clinic.doctor}. We focus on comfortable treatment, clear explanations and results that last — so every visit leaves you smiling.`,
+    body: `${clinic.name} is a family dental clinic on Hosala Road, ${clinic.city}, led by ${clinic.doctor}. We focus on comfortable treatment, clear explanations and results that last — so every visit leaves you smiling.`,
     points: [
       'Complete dental care under one roof',
       'Sterilised instruments and modern equipment',
@@ -149,12 +148,9 @@ const steps = [
   { title: 'Ongoing Care & Follow-Up', icon: 'HeartPulse', text: 'Follow-up visits and tips to keep your results healthy for years.' },
 ]
 
-// TODO: replace these with real patient reviews (e.g. from Google) before going live.
-const testimonials = [
-  { name: 'Patient name', role: 'Root Canal Treatment', rating: 5, title: 'Painless and Professional', text: 'Replace this text with a real review from one of your patients. Short, specific reviews work best.' },
-  { name: 'Patient name', role: 'Teeth Cleaning', rating: 5, title: 'Highly Recommended', text: 'Replace this text with a real review from one of your patients. Mention the treatment they received.' },
-  { name: 'Patient name', role: 'Braces', rating: 5, title: 'Friendly and Caring', text: 'Replace this text with a real review from one of your patients, with their permission.' },
-]
+// Add real patient reviews here (with permission). The section is hidden while this list is empty.
+// e.g. { name: 'Name', role: 'Root Canal Treatment', rating: 5, title: 'Painless', text: '...' }
+const testimonials = []
 
 // Also used by the chat assistant and Google's FAQ results.
 const faqs = [
