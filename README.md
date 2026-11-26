@@ -1,6 +1,6 @@
-# Srilakshmi Dental Clinic — Website
+# Sanjeevini Dental Clinic — Website
 
-React + Vite + Tailwind CSS + Framer Motion. Live at https://srilakshmi-dental-clinic.vercel.app
+React + Vite + Tailwind CSS + Framer Motion. Live at https://sanjeevini-dental-clinic.vercel.app
 
 ```bash
 npm install

@@ -4,11 +4,11 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Live website address (no trailing slash). Used for SEO, sitemap and share links.
-const siteUrl = 'https://srilakshmi-dental-clinic.vercel.app'
+const siteUrl = 'https://sanjeevini-dental-clinic.vercel.app'
 
 const clinic = {
-  name: 'Srilakshmi Dental Clinic',
-  shortName: 'Srilakshmi', // used in the chat assistant title
+  name: 'Sanjeevini Dental Clinic',
+  shortName: 'Sanjeevini', // used in the chat assistant title
   doctor: 'Dr. SomShekhar',
   doctorRole: 'Dental Surgeon',
   phoneDisplay: '094485 80245', // how the number is shown
@@ -40,7 +40,7 @@ const clinic = {
 
 // Logo text and colours. Colours are used across the whole site.
 const brand = {
-  logoTop: 'SRILAKSHMI',
+  logoTop: 'SANJEEVINI',
   logoBottom: 'Dental Clinic',
   colors: {
     primary: '#1E3FF5',
